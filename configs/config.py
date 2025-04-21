@@ -36,8 +36,8 @@ class Config:
         # 训练超参数配置 - 调整以适应A6000显卡
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.num_epochs = 200    # 增加训练轮数提高模型收敛
-        self.batch_size = 2     # 增加批次大小利用A6000的大显存
-        self.initial_lr = 3e-4   # 适当调整初始学习率
+        self.batch_size = 16     # 增加批次大小利用A6000的大显存
+        self.initial_lr = 1e-4   # 适当调整初始学习率
         self.num_workers = 8     # 增加工作线程数提高数据加载速度
         
         # 优化器配置
