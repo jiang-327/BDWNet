@@ -9,7 +9,7 @@ import argparse
 import matplotlib.pyplot as plt
 
 try:
-    from models.network import WoodDefectDB
+    from models.network import WoodDefectBD
     from utils.dataset import WoodDefectDataset
     from utils.metrics import calculate_iou, calculate_dice, calculate_precision_recall, calculate_boundary_accuracy
     from configs.config import Config
@@ -726,7 +726,7 @@ def main():
 
     # 加载模型
     try:
-        model = WoodDefectDB(pretrained=False)
+        model = WoodDefectBD(pretrained=False)
         
         print(f"尝试加载模型: {model_path}")
 

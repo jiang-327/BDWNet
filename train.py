@@ -20,7 +20,7 @@ from torch.optim.lr_scheduler import (
 )
 from sklearn.model_selection import KFold
 
-from models.network import WoodDefectDB
+from models.network import WoodDefectBD
 from models.loss import WoodDefectLoss
 from utils.dataset import (
     WoodDefectDataset, 

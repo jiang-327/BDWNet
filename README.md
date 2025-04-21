@@ -60,7 +60,7 @@ python test.py
 
 ## 主要文件说明
 
-- `models/network.py`：WoodDefectDB网络模型定义
+- `models/network.py`：WoodDefectBD网络模型定义
 - `models/loss.py`：损失函数定义
 - `utils/dataset.py`：数据加载和预处理
 - `utils/metrics.py`：模型评估指标

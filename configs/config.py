@@ -166,8 +166,8 @@ class Config:
 
     def get_model(self):
         """获取模型实例"""
-        from models.network import WoodDefectDB
-        return WoodDefectDB(pretrained=self.pretrained)
+        from models.network import WoodDefectBD
+        return WoodDefectBD(pretrained=self.pretrained)
 
     def get_loss_function(self):
         """获取损失函数实例"""

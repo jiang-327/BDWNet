@@ -6,10 +6,10 @@ import torchvision.models as models
 from torchvision.models import ResNet50_Weights
 import numpy as np
 
-class WoodDefectDB(nn.Module):
+class WoodDefectBD(nn.Module):
     def __init__(self, pretrained=True):
         """
-        木材缺陷检测网络(DBWNet)初始化
+        木材缺陷检测网络(BDWNet)初始化
         Args:
             pretrained: 是否使用预训练权重
         """

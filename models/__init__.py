@@ -1,7 +1,7 @@
-from .network import WoodDefectDB, MTPE, DSBEM, TGASM
+from .network import WoodDefectBD, MTPE, DSBEM, TGASM
 
 __all__ = [
-    'WoodDefectDB', 
+    'WoodDefectBD', 
     'MTPE', 
     'DSBEM', 
     'TGASM'
