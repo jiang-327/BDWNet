@@ -35,14 +35,14 @@ pip install torch torchvision numpy opencv-python matplotlib albumentations scik
 请将数据集按照以下结构放置：
 ```
 data/
-├── train/              # 训练集图像和标签
-├── val/                # 验证集图像和标签
-└── test/               # 测试集图像和标签
+├── train/              # 训练集图像和掩码
+├── val/                # 验证集图像和掩码
+└── test/               # 测试集图像和掩码
 ```
 
 每个目录下应包含：
 - images/：存放图像文件
-- labels/：存放对应的标签文件
+- masks/：存放对应的掩码文件
 
 ### 3. 训练模型
 
