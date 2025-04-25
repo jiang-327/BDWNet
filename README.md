@@ -1,69 +1,69 @@
-# 木材缺陷检测
+# Wood Defect Detection
 
-这个项目使用深度学习方法进行木材缺陷检测和分割。
+This project uses deep learning methods for wood defect detection and segmentation.
 
-## 项目结构
+## Project Structure
 
 ```
-├── configs/               # 配置文件
-│   └── config.py         # 参数配置
-├── data/                 # 数据目录
-│   ├── train/           # 训练集
-│   ├── val/             # 验证集
-│   └── test/            # 测试集
-├── models/              # 模型定义
-│   ├── loss.py         # 损失函数定义
-│   └── network.py      # 网络结构定义
-├── utils/              # 工具函数
-│   ├── dataset.py      # 数据集加载和预处理
-│   └── metrics.py      # 评价指标计算
-├── train.py           # 训练脚本
-└── test.py            # 测试脚本
+├── configs/               # Configuration files
+│   └── config.py         # Parameter configuration
+├── data/                 # Data directory
+│   ├── train/           # Training set
+│   ├── val/             # Validation set
+│   └── test/            # Test set
+├── models/              # Model definitions
+│   ├── loss.py         # Loss function definitions
+│   └── network.py      # Network structure definitions
+├── utils/              # Utility functions
+│   ├── dataset.py      # Dataset loading and preprocessing
+│   └── metrics.py      # Evaluation metrics calculation
+├── train.py           # Training script
+└── test.py            # Testing script
 ```
 
-## 运行步骤
+## Usage
 
-### 1. 环境准备
+### 1. Environment Setup
 
-确保安装了以下依赖：
+Make sure to install the following dependencies:
 ```
 pip install torch torchvision numpy opencv-python matplotlib albumentations scikit-learn tqdm
 ```
 
-### 2. 数据准备
+### 2. Data Preparation
 
-请将数据集按照以下结构放置：
+Please organize your dataset according to the following structure:
 ```
 data/
-├── train/              # 训练集图像和掩码
-├── val/                # 验证集图像和掩码
-└── test/               # 测试集图像和掩码
+├── train/              # Training set images and masks
+├── val/                # Validation set images and masks
+└── test/               # Test set images and masks
 ```
 
-每个目录下应包含：
-- images/：存放图像文件
-- masks/：存放对应的掩码文件
+Each directory should contain:
+- images/: Image files
+- masks/: Corresponding mask files
 
-### 3. 训练模型
+### 3. Training the Model
 
-运行以下命令开始训练：
+Run the following command to start training:
 ```
 python train.py
 ```
 
-### 4. 测试模型
+### 4. Testing the Model
 
-训练完成后，运行以下命令测试模型性能：
+After training is complete, run the following command to test model performance:
 ```
 python test.py
 ```
 
-## 主要文件说明
+## Main File Descriptions
 
-- `models/network.py`：WoodDefectBD网络模型定义
-- `models/loss.py`：损失函数定义
-- `utils/dataset.py`：数据加载和预处理
-- `utils/metrics.py`：模型评估指标
-- `configs/config.py`：训练和模型参数配置
-- `train.py`：训练脚本
-- `test.py`：测试脚本 
+- `models/network.py`: WoodDefectBD network model definition
+- `models/loss.py`: Loss function definitions
+- `utils/dataset.py`: Data loading and preprocessing
+- `utils/metrics.py`: Model evaluation metrics
+- `configs/config.py`: Training and model parameter configuration
+- `train.py`: Training script
+- `test.py`: Testing script 
